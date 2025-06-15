@@ -50,6 +50,8 @@ pub fn build(b: *std.Build) !void {
         .version = try .parse("0.0.7"),
     });
     plutosvg.root_module.addCMacro("PLUTOSVG_BUILD_STATIC", "1");
+    // so it doesnt try import it
+    plutosvg.root_module.addCMacro("PLUTOVG_BUILD_STATIC", "1");
     plutosvg.root_module.addCMacro("PLUTOSVG_HAS_FREETYPE", "1");
     plutosvg.linkLibrary(freetype_dep.artifact("freetype"));
     plutosvg.linkLibrary(plutovg);
