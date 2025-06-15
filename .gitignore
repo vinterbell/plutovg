@@ -1,2 +1,5 @@
 /build
 *.user
+
+.zig-cache
+zig-out

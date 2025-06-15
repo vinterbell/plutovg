@@ -1,0 +1,18 @@
+.{
+    .name = .plutovg,
+    .fingerprint = 0x32653e9614b05c02,
+    .version = "1.1.0",
+    .dependencies = .{
+        .freetype = .{
+            .url = "git+https://github.com/vinterbell/freetype.git#f0525f194e1e7d267317277f3f5d1987531f2b3c",
+            .hash = "freetype-2.13.3-AAAAANqQeACrwFlNvjzm08b7nPpSFIVH9AREbWD0LKAF",
+        },
+    },
+    .minimum_zig_version = "0.15.0-dev.666+c04be630d",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "include",
+        "source",
+    },
+}
